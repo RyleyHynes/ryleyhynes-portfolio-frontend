@@ -1,62 +1,10 @@
 {
-  "name": "ryleyhynes-portfolio-frontend",
+  "name": "portfolio-root",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@originjs/vite-plugin-commonjs": "^1.0.3",
-    "class-variance-authority": "^0.7.0",
-    "framer-motion": "^11.3.27",
-    "lucide-react": "^0.454.0",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "react-router-dom": "^6.28.0",
-    "sass": "^1.93.2"
+    "dev": "concurrently -k -n BACKEND,FRONTEND \"cd server && . .venv/bin/activate && python manage.py runserver\" \"cd frontend && npm run dev\""
   },
   "devDependencies": {
-    "@eslint/js": "^9.36.0",
-    "@testing-library/jest-dom": "^6.9.1",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^14.6.1",
-    "@types/node": "^24.6.0",
-    "@types/react": "^19.1.16",
-    "@types/react-dom": "^19.1.9",
-    "@typescript-eslint/eslint-plugin": "^8.46.1",
-    "@typescript-eslint/parser": "^8.46.1",
-    "@vitejs/plugin-react": "^5.0.4",
-    "autoprefixer": "^10.4.20",
-    "eslint": "^9.38.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.22",
-    "globals": "^16.4.0",
-    "husky": "^9.1.7",
-    "jsdom": "^27.0.1",
-    "lint-staged": "^16.2.4",
-    "postcss": "^8.4.47",
-    "prettier": "^3.6.2",
-    "tailwindcss": "^3.4.14",
-    "typescript": "~5.9.3",
-    "typescript-eslint": "^8.45.0",
-    "vite": "^7.1.7",
-    "vitest": "^3.2.4"
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{scss,css,md,json}": [
-      "prettier --write"
-    ]
+    "concurrently": "^9.0.0"
   }
 }

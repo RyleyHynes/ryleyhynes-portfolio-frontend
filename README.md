@@ -1,25 +1,6 @@
-# 🧭 Ryley Hynes — Software Engineering Portfolio
-
-A **React 19 + TypeScript** portfolio built with **Vite 7**, **TailwindCSS**, and **SCSS** — designed to showcase professional-grade engineering, reliability, and developer experience.  
-Includes animated page transitions, dark mode, and structured sections for projects, skills, and contact.
-
----
-
-## 🚀 Quick Start
-
-```bash
-# 1️⃣ Clone the repository
-git clone https://github.com/RyleyHynes/ryleyhynes-portfolio-frontend.git
-cd ryleyhynes-portfolio-frontend
-
-# 2️⃣ Install dependencies
-npm install
-
-# 3️⃣ Start the development server
-npm run dev
-# Open http://localhost:3000 in your browser
-
-# 4️⃣ Build and preview for production
-npm run build
-npm run preview
-# Optimized static files output to /dist
+# Portfolio Monorepo (React + Django)
+Quickstart:
+- Backend: `cd server && python -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt && python manage.py makemigrations && python manage.py migrate && python manage.py seed_demo && python manage.py runserver`
+- Frontend: `cd frontend && npm i && npm run dev`
+API docs: http://localhost:8000/api/docs/
+Demo user: demo / demo1234
