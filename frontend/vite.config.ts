@@ -4,7 +4,7 @@ import { viteCommonjs } from '@originjs/vite-plugin-commonjs'
 import path from 'path'
 
 export default defineConfig({
-  base: '.',
+  base: 'hynes-fullstack-portfolio/',
   build: {
     manifest: true,
   },
