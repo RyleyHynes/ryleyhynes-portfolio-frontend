@@ -9,8 +9,8 @@ Includes animated page transitions, dark mode, and structured sections for proje
 
 ```bash
 # 1️⃣ Clone the repository
-git clone https://github.com/RyleyHynes/ryleyhynes-portfolio-frontend.git
-cd ryleyhynes-portfolio-frontend
+git clone https://github.com/RyleyHynes/hynes-fullstack-portfolio.git
+cd hynes-fullstack-portfolio
 
 # 2️⃣ Install dependencies
 npm install
