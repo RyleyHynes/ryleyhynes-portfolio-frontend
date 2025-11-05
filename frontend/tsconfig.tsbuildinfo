@@ -1,0 +1,1 @@
+{"root":["./src/main.tsx","./src/app/app.tsx","./src/data/profile.ts","./src/features/api/portfolioapi.ts","./src/pages/about.tsx","./src/pages/contact.tsx","./src/pages/home.tsx","./src/pages/projects.tsx","./src/pages/skillsexperience.tsx","./src/test/setup.ts","./vite.config.ts"],"version":"5.9.3"}
