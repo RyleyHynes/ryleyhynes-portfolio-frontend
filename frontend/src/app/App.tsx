@@ -3,11 +3,11 @@ import { Routes, Route, NavLink, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Moon, Sun, Github, Linkedin, Mail, MapPin } from 'lucide-react'
 import { profile } from '@/data/profile'
-import Home from '@/views/Home'
-import Projects from '@/views/Projects'
-import About from '@/views/About'
-import SkillsExperience from '@/views/SkillsExperience'
-import Contact from '@/views/Contact'
+import Home from '@/pages/Home'
+import Projects from '@/pages/Projects'
+import About from '@/pages/About'
+import SkillsExperience from '@/pages/SkillsExperience'
+import Contact from '@/pages/Contact'
 
 function useDarkMode() {
   const [enabled, setEnabled] = useState(() => window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
