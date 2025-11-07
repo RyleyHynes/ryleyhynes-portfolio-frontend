@@ -1,0 +1,7 @@
+{
+    "cSpell.words": [
+        "analyse",
+        "pylint"
+    ],
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python"
+}
