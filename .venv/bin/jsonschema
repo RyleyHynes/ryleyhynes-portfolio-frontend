@@ -1,4 +1,4 @@
-#!/Users/ryleyhynes/workspace/portfolio/hynes-fullstack-portfolio/backend/.venv/bin/python
+#!/Users/ryleyhynes/workspace/portfolio/hynes-fullstack-portfolio/.venv/bin/python
 import sys
 from jsonschema.cli import main
 if __name__ == '__main__':

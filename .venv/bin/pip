@@ -1,4 +1,4 @@
-#!/Users/ryleyhynes/workspace/portfolio/hynes-fullstack-portfolio/backend/.venv/bin/python
+#!/Users/ryleyhynes/workspace/portfolio/hynes-fullstack-portfolio/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
