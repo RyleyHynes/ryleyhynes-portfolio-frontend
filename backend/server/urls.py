@@ -13,9 +13,9 @@ urlpatterns = [
 
     # App APIs (each app exposes `urlpatterns` in its api.py)
     path("api/profile/", include("profile.api")),
-    path("api/peaks/", include("peak_planner.api")),        # or project_tracker.api if that’s your name
-    path("api/routes/", include("route_log.api")),
-    path("api/supplies/", include("trail_supply.api")),
+    # path("api/peaks/", include("peak_planner.api")),        # or project_tracker.api if that’s your name
+    # path("api/routes/", include("route_log.api")),
+    # path("api/supplies/", include("trail_supply.api")),
 
     # OpenAPI + Swagger
     path("api/schema/", SpectacularAPIView.as_view(), name="schema"),

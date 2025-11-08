@@ -27,9 +27,9 @@ INSTALLED_APPS = [
 
     # Your apps
     "profile",
-    "peak_planner",   # or project_tracker
-    "route_log",
-    "trail_supply",
+    # "peak_planner",   # or project_tracker
+    # "route_log",
+    # "trail_supply",
 ]
 
 # --- Middleware ----------------------------------------------
@@ -65,20 +65,14 @@ TEMPLATES = [
     },
 ]
 
-# --- Database (Postgres via DATABASE_URL, fallback to sqlite) ---------------
+# --- Database ( DATABASE_URL, fallback to sqlite) ---------------
 # Example DATABASE_URL:
-# postgres://user:pass@localhost:5432/dbname
-DATABASE_URL = os.getenv("DATABASE_URL")
-if DATABASE_URL:
-    import dj_database_url  # pip install dj-database-url
-    DATABASES = {"default": dj_database_url.parse(DATABASE_URL, conn_max_age=600)}
-else:
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": BASE_DIR / "db.sqlite3",
-        }
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
+}
 
 # --- Static files -----------------------------------------------------------
 STATIC_URL = "/static/"
