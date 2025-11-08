@@ -1,0 +1,10 @@
+Django>=5.0,<6.0
+djangorestframework>=3.15
+djangorestframework-simplejwt>=5.3
+django-cors-headers>=4.4
+whitenoise[brotli]>=6.7
+drf-spectacular>=0.27
+python-dateutil>=2.9
+pytz>=2024.1
+djangorestframework-simplejwt
+drf-spectacular
