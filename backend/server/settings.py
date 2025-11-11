@@ -27,7 +27,7 @@ INSTALLED_APPS = [
 
     # Your apps
     "profile",
-    # "peak_planner",   # or project_tracker
+    "peak_planner",
     # "route_log",
     # "trail_supply",
 ]
@@ -74,6 +74,13 @@ DATABASES = {
     }
 }
 
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
+        "LOCATION": "portfolio-cache",
+    }
+}
+
 # --- Static files -----------------------------------------------------------
 STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
@@ -109,6 +116,8 @@ SIMPLE_JWT = {
     "ROTATE_REFRESH_TOKENS": True,
     "BLACKLIST_AFTER_ROTATION": True,
 }
+
+OPEN_METEO_TIMEOUT = float(os.getenv("OPEN_METEO_TIMEOUT", "5"))
 
 # --- CORS / CSRF for local dev (React on 5173 or 3000) ---------------------
 CORS_ALLOW_ALL_ORIGINS = False

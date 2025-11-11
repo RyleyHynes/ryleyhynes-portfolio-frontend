@@ -8,6 +8,7 @@ import Projects from '@/pages/Projects'
 import About from '@/pages/About'
 import SkillsExperience from '@/pages/SkillsExperience'
 import Contact from '@/pages/Contact'
+import PeakPlanner from '@/pages/PeakPlanner'
 
 function useDarkMode() {
   const [enabled, setEnabled] = useState(false)
@@ -76,6 +77,7 @@ export default function App() {
           <Routes location={location}>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/peak-planner/*" element={<PeakPlanner />} />
             <Route path="/about" element={<About />} />
             <Route path="/skills-experience" element={<SkillsExperience />} />
             <Route path="/contact" element={<Contact />} />

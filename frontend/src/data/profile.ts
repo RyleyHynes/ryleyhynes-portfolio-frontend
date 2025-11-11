@@ -85,6 +85,8 @@ export const STACK = ['TypeScript', 'React', 'SCSS', 'Python/Django', 'SQLite'] 
 export const projects = [
   {
     name: 'Peak Planner',
+    slug: 'peak-planner',
+    comingSoon: false,
     blurb:
       'Plan alpine trips with routes, gear, partners, and weather windows. Full CRUD with auth and a clean, fast UI.',
     features: [
@@ -93,7 +95,7 @@ export const projects = [
       'Search, filters, pagination'
     ],
     links: [
-      { label: 'Launch App', href: '/apps/peak-planner' },
+      { label: 'Launch App', href: '/peak-planner', internal: true },
       { label: 'API Docs', href: '/api/peak-planner/schema/swagger-ui/' },
       { label: 'Repository', href: 'https://github.com/RyleyHynes/hynes-fullstack-portfolio' }
     ],
@@ -101,6 +103,8 @@ export const projects = [
   },
   {
     name: 'Route Log',
+    slug: 'route-log',
+    comingSoon: true,
     blurb:
       'Personal climbing logbook with grades, styles, notes, and media. Analyze progress over time.',
     features: [
@@ -117,6 +121,8 @@ export const projects = [
   },
   {
     name: 'Trail Supply',
+    slug: 'trail-supply',
+    comingSoon: true,
     blurb:
       'Inventory + orders for outdoor gear. Track products, suppliers, purchase orders, and fulfillment.',
     features: [
