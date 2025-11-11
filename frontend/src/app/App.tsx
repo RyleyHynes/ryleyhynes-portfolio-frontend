@@ -10,7 +10,7 @@ import SkillsExperience from '@/pages/SkillsExperience'
 import Contact from '@/pages/Contact'
 
 function useDarkMode() {
-  const [enabled, setEnabled] = useState(() => window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+  const [enabled, setEnabled] = useState(false)
   useEffect(() => {
     const root = document.documentElement
     if (enabled) root.classList.add('dark')
