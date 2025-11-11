@@ -10,17 +10,6 @@ $brand: #1f85ff;
   }
 }
 
-.gradient-border {
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute; inset: 0; padding: 1px; border-radius: 1rem;
-    background: linear-gradient(135deg, rgba(31,133,255,.6), rgba(74,168,255,.35), rgba(10,84,180,.6));
-    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor; mask-composite: exclude;
-  }
-}
-
 .prose-compact {
   h1,h2,h3 { margin-bottom:.35em; }
   p { margin:.35em 0; }
