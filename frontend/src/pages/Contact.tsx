@@ -8,7 +8,7 @@ export default function Contact() {
   const valid = name.trim().length > 1 && /.+@.+\..+/.test(email) && msg.trim().length > 4
 
   return (
-    <section className="grid gap-8 max-w-xl">
+    <section className="grid gap-8 max-w-xl text-slate-900 dark:text-slate-100">
       <header>
         <h2 className="section-title">Contact</h2>
         <p className="mt-2 text-slate-600 dark:text-slate-300">Want to collaborate or chat? Email is best.</p>
@@ -16,7 +16,7 @@ export default function Contact() {
 
       <form
         onSubmit={(e) => { e.preventDefault(); window.location.href = `mailto:${profile.email}?subject=Portfolio%20Inquiry%20from%20${encodeURIComponent(name)}&body=${encodeURIComponent(msg + '\n\nFrom: ' + email)}` }}
-        className="card p-6 grid gap-4"
+        className="card p-6 grid gap-4 text-slate-900 dark:text-slate-100"
       >
         <label className="grid gap-1 text-sm">
           <span>Name</span>
